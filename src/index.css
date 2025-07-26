@@ -1,0 +1,61 @@
+/* index.css */
+
+/* Apply a global box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body background and font smoothing */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fd;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default ul/ol styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Prevent image overflow */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default input/button styling on focus */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Root div layout fallback */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
